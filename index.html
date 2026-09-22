@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ruttolomeo</title>
+<meta name="description" content="Pagina personale di Cristiano Corneli. Progetti e app personali, fra cui rclone-BOREd.">
+<style>
+:root {
+  --bg: #fbfaf8; --fg: #1a1a18; --muted: #6b6a66;
+  --rule: #e2e0da; --accent: #7a4b2a;
+}
+:root:not([data-theme="light"]) {
+  @media (prefers-color-scheme: dark) {
+    --bg: #14140f; --fg: #eceadf; --muted: #9a978c;
+    --rule: #2c2c24; --accent: #d9a273;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14140f; --fg: #eceadf; --muted: #9a978c;
+  --rule: #2c2c24; --accent: #d9a273;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.65 ui-serif, Georgia, "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+}
+main { max-width: 42rem; margin: 0 auto; padding: 4rem 16px 6rem; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .25rem; letter-spacing: -.01em; }
+.sub { color: var(--muted); margin: 0 0 3rem; font-size: 1rem; }
+h2 {
+  font-size: .78rem; text-transform: uppercase; letter-spacing: .12em;
+  color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600; margin: 3rem 0 .75rem;
+  padding-bottom: .5rem; border-bottom: 1px solid var(--rule);
+}
+p { margin: 0 0 1rem; }
+a { color: var(--accent); text-underline-offset: 2px; }
+.app { margin: 0 0 1.5rem; }
+.app h3 { margin: 0 0 .2rem; font-size: 1.05rem; }
+.app p { color: var(--muted); margin: 0; }
+footer {
+  margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--rule);
+  color: var(--muted); font-size: .9rem;
+}
+</style>
+</head>
+<body>
+<main>
+  <h1>Ruttolomeo</h1>
+  <p class="sub">Cristiano Corneli — pagina personale.</p>
+
+  <h2>Applicazioni</h2>
+
+  <div class="app">
+    <h3>rclone-BOREd</h3>
+    <p>Client OAuth personale per <a href="https://rclone.org/">rclone</a>, usato
+    per sincronizzare i miei file su Google Drive da una singola macchina Linux.
+    Non ha altri utenti. <a href="privacy.html">Norme sulla privacy</a>.</p>
+  </div>
+
+  <h2>Codice</h2>
+  <p>I progetti stanno su <a href="https://github.com/Ruttolomeo">GitHub</a>.</p>
+
+  <footer>Sito personale. Nessun cookie, nessun tracciamento.</footer>
+</main>
+</body>
+</html>
